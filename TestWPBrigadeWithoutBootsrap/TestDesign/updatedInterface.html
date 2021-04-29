@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>HTML Design updated</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../assets/css/updatedStyle.css">
+  <link rel="stylesheet" href="../assets/css/fancyBoxStyle.css">
+</head>
+<body class="body">
+  <!-- Start alert navbar-->
+    <div class="alert" id="topAlert">
+      <a href="#" class="close" id="closeBtn" onClick="hide('topAlert')">&times;</a>
+      <span>Live race stream from gator nationals in sarasota, fl / <a href="#" class="alert-link">watch now</a></span>
+  </div>
+  <!-- Start Primary navbar-->
+  <nav class="primary-navbar">
+      <div class="navbar-header">
+          <a class="collapseBtn" onClick="collapse('collapseNav')">
+             <img src="../assets/images/burger-icon.png">
+          </a>
+           <a class="navbar-brand" href="#">ADIDAS</a>
+      </div>
+      <div class="side-btns">
+        <button type="button" class="btn btn-default navbar-btn membership-btn"><span class="navBtn-textMem">MEMBERSHIP</span></button>
+        <button type="button" class="btn btn-default navbar-btn account-btn"><span class="navBtn-textAcc">ACCOUNT</span></button>
+      </div>
+   </nav>
+   <!-- Start Secondary navbar-->
+   <nav class="secondary-nav" id="collapseNav">
+      <ul>
+       <li><a href="#"><span class="SecNav-text">Our tracks</span></a></li>
+       <li><a href="#"><span class="SecNav-text">Find Events</span></a></li>
+       <li><a href="#"><span class="SecNav-text">Track Map</span></a></li>
+       <li><a href="#"><span class="SecNav-text">Shop</span></a></li>
+       <li><a href="#"><span class="SecNav-text">About Us</span></a></li>
+      </ul>
+      <form class="navbar-form" action="#">
+          <input type="text" class="search-icon search form-control" placeholder="SEARCH">
+      </form>
+  </nav>
+  <!--Start code for titleBar -->
+  <section class="titleBar">
+    <div class="title">
+      <h1>Home page</h1>
+    </div>
+    <div class="title-aside">
+      <h5 class="title-aside-text">Partnership By</h5>
+    </div>
+  </section> <!-- end Title Bar -->
+
+  <!-- carousal start -->
+  <div id="carouselBanner">
+    <div class="background-opacity">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li onclick="currentSlide(1)" class="active"></li>
+        <li onclick="currentSlide(2)"></li>
+        <li onclick="currentSlide(3)"></li>
+        <li onclick="currentSlide(4)"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="sliderItem fade">
+          <div class="itemRow">
+            <div class="slider-caption">
+            <h1>GET READY for New Adidas bands</h1>
+            <p class="text-justify">Adidas tracks all begin with a starting gate and end with a finish line, but
+             everything in between varies from track to track. Because no two tracks are alike, this action
+             sport keeps you on your toes wherever you are racing.</p>
+            </div>
+              <div class="video-thumbnail">
+                <img  src="../assets/images/video-thumbnail-img.png" /><a data-fancybox href="https://www.youtube.com/watch?v=Sp0qjqMgij8"><span class="play-icon play">&nbsp;</span></a>
+              </div>
+            </div>
+          </div>
+          <div class="sliderItem fade">
+            <div class="itemRow">
+              <div class="slider-caption">
+              <h1>GET READY for New Adidas bands.</h1>
+              <p class="text-justify">Adidas tracks all begin with a starting gate and end with a finish line, but
+               everything in between varies from track to track. Because no two tracks are alike, this action
+               sport keeps you on your toes wherever you are racing.</p>
+              </div>
+                <div class="video-thumbnail">
+                  <img src="../assets/images/video-thumbnail-img.png" /><a data-fancybox href="https://www.youtube.com/watch?v=Sp0qjqMgij8"><span class="play-icon play">&nbsp;</span></a>
+                </div>
+              </div>
+            </div>
+        <div class="sliderItem fade">
+          <div class="itemRow">
+            <div class="slider-caption">
+            <h1>GET READY for New Adidas bands..</h1>
+            <p class="text-justify">Adidas tracks all begin with a starting gate and end with a finish line, but
+             everything in between varies from track to track. Because no two tracks are alike, this action
+             sport keeps you on your toes wherever you are racing.</p>
+            </div>
+            <div class="video-thumbnail">
+                <img src="../assets/images/video-thumbnail-img.png" /><a data-fancybox href="https://www.youtube.com/watch?v=Sp0qjqMgij8"><span class="play-icon play">&nbsp;</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="sliderItem fade">
+          <div class="itemRow">
+            <div class="slider-caption">
+            <h1>GET READY for New Adidas bands...</h1>
+            <p class="text-justify">Adidas tracks all begin with a starting gate and end with a finish line, but
+             everything in between varies from track to track. Because no two tracks are alike, this action
+             sport keeps you on your toes wherever you are racing.</p>
+            </div>
+              <div class="video-thumbnail">
+                <img src="../assets/images/video-thumbnail-img.png" /><a data-fancybox href="https://www.youtube.com/watch?v=Sp0qjqMgij8"><span class="play-icon play">&nbsp;</span></a>
+              </div>
+            </div>
+          </div>
+      </div>
+
+      <!-- Left and right controls -->
+      <a class=" left carousel-control"  onclick="plusSlides(-1)">
+        <span class="hero-slider-leftt-arrow leftArrow1">&nbsp;</span>
+      </a>
+      <a class="right carousel-control" onclick="plusSlides(1)">
+        <span class="hero-slider-right-arrow rightArrow1">&nbsp;</span>
+      </a>
+    </div>
+  </div>
+
+  <section id="main-body">
+    <div class="leftBodycontainer">
+          <section id="thumbnail-slider">
+            <div id="carouselThumbnail">
+            <!-- Indicators -->
+            <ol class="thumbCarousel-indicators">
+              <li onclick="thumbCurrentSlide(1)" class="active"></li>
+              <li onclick="thumbCurrentSlide(2)"></li>
+              <li onclick="thumbCurrentSlide(3)"></li>
+              <li onclick="thumbCurrentSlide(4)"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+              <div class="thumbSliderItem active">
+                <div class="row">
+                  <div class=" thumb-slider-img">
+                    <img class="img-responsive" src="../assets/images/thubnail-slider-img.png">
+                  </div>
+                  <div class=" thumb-slider-img">
+                    <img class="img-responsive" src="../assets/images/thubnail-slider-img.png">
+                  </div>
+                  <div class=" hidden-xs thumb-slider-img">
+                    <img class="img-responsive" src="../assets/images/thubnail-slider-img.png">
+                  </div>
+                  <div class=" hidden-sm hidden-xs thumb-slider-img">
+                    <img class="img-responsive" src="../assets/images/thubnail-slider-img.png">
+                  </div>
+                </div>
+                </div>
+                <div class="thumbSliderItem fade">
+                  <div class="row">
+                    <div class=" thumb-slider-img">
+                      <img class="img-responsive" src="../assets/images/thubnail-slider-img.png">
+                    </div>
+                    <div class=" thumb-slider-img">
+                      <img class="img-responsive" src="../assets/images/thubnail-slider-img.png">
+                    </div>
+                    <div class=" hidden-xs thumb-slider-img">
+                      <img class="img-responsive" src="../assets/images/thubnail-slider-img.png">
+                    </div>
+                    <div class=" hidden-sm hidden-xs thumb-slider-img">
+                      <img class="img-responsive" src="../assets/images/thubnail-slider-img.png">
+                    </div>
+                  </div>
+                  </div>
+              <div class="thumbSliderItem fade">
+                <div class="row">
+                  <div class=" thumb-slider-img">
+                    <img class="img-responsive" src="../assets/images/thubnail-slider-img.png">
+                  </div>
+                  <div class=" thumb-slider-img">
+                    <img class="img-responsive" src="../assets/images/thubnail-slider-img.png">
+                  </div>
+                  <div class=" hidden-xs thumb-slider-img">
+                    <img class="img-responsive" src="../assets/images/thubnail-slider-img.png">
+                  </div>
+                  <div class=" hidden-sm hidden-xs thumb-slider-img">
+                    <img class="img-responsive" src="../assets/images/thubnail-slider-img.png">
+                  </div>
+                </div>
+                </div>
+              <div class="thumbSliderItem fade">
+                <div class="row">
+                  <div class=" thumb-slider-img">
+                    <img class="img-responsive" src="../assets/images/thubnail-slider-img.png">
+                  </div>
+                  <div class=" thumb-slider-img">
+                    <img class="img-responsive" src="../assets/images/thubnail-slider-img.png">
+                  </div>
+                  <div class=" hidden-xs thumb-slider-img">
+                    <img class="img-responsive" src="../assets/images/thubnail-slider-img.png">
+                  </div>
+                  <div class=" hidden-sm hidden-xs thumb-slider-img">
+                    <img class="img-responsive" src="../assets/images/thubnail-slider-img.png">
+                  </div>
+                </div>
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left"  onclick="thumbPlusSlides(-1)">
+              <span class="hero-slider-leftt-arrow leftArrow2">&nbsp;</span>
+            </a>
+            <a class="right" onclick="thumbPlusSlides(1)">
+              <span class="hero-slider-right-arrow rightArrow2">&nbsp;</span>
+            </a>
+          </div>
+          </section> <!-- End thumb_slider-->
+
+          <div class="row post-section">
+            <div class="thumbnail-wrapper">
+              <div class="thumbnail thumb-img">
+                <a href="../assets/images/post-img.png" data-fancybox="images">
+                  <img  src="../assets/images/post-img.png" >
+                </a>
+                <div class="caption">
+                   <h4>2019 National champions crowned at reebok</h4>
+                   <p>Membership has its perks. Joining ADIDAS means you can race at your local tracks</p>
+                   <a href="#"> READ MORE </a>
+                </div>
+             </div>
+            </div>
+            <div class="thumbnail-wrapper">
+              <div class="thumbnail thumb-img">
+                <a href="../assets/images/post-img.png" data-fancybox="images">
+                  <img  src="../assets/images/post-img.png" >
+                </a>
+                <div class="caption">
+                   <h4>2019 National champions crowned at reebok</h4>
+                   <p>Membership has its perks. Joining ADIDAS means you can race at your local tracks</p>
+                   <a href="#"> READ MORE </a>
+                </div>
+             </div>
+           </div>
+           <div class="thumbnail-wrapper">
+             <div class="thumbnail thumb-img">
+               <a href="../assets/images/post-img.png" data-fancybox="images">
+                 <img  src="../assets/images/post-img.png" >
+               </a>
+               <div class="caption">
+                  <h4>2019 National champions crowned at reebok</h4>
+                  <p>Membership has its perks. Joining ADIDAS means you can race at your local tracks</p>
+                  <a href="#" > READ MORE </a>
+               </div>
+            </div>
+           </div>
+          </div> <!-- End post-section-->
+          <!-- Start zigzag-section-->
+          <div class="zigzag-section">
+           <div class="thumbnail col-md-12 col-sm-12 col-xs-12 zigzag1">
+             <a href="../assets/images/zig-zag-img-11.png" class="zigHidden-sm hidden-xs" data-fancybox="images">
+                    <img  src="../assets/images/zig-zag-img-1.png">
+             </a>
+             <a href="../assets/images/zig-zag-img-11.png" class="hidden-xl hidden-lg hidden-md display-sm hidden-xs" data-fancybox="images">
+                    <img src="../assets/images/zig-zag-img-sm1.png">
+             </a>
+             <a href="../assets/images/zig-zag-img-11.png" class="hidden-xl hidden-lg hidden-md zigHidden-sm display-xs" data-fancybox="images">
+                    <img src="../assets/images/zig-zag-img-11.png">
+             </a>
+             <div class="caption">
+                  <h4>2019 National champions crowned at reebok</h4>
+                  <p>Membership has its perks. Joining ADIDAS means you can race at your local tracks</p>
+             </div>
+           </div>
+           <div class="thumbnail col-md-12 col-sm-12 col-xs-12 zigzag2">
+             <div class="caption">
+                  <h4>2019 National champions crowned at reebok</h4>
+                  <p>Membership has its perks. Joining ADIDAS means you can race at your local tracks</p>
+             </div>
+             <a href="../assets/images/zig-zag-img-22.png" class="zigHidden-sm hidden-xs" data-fancybox="images">
+                    <img  src="../assets/images/zig-zag-img-2.png">
+             </a>
+             <a href="../assets/images/zig-zag-img-22.png" class="hidden-xl hidden-lg hidden-md display-sm hidden-xs" data-fancybox="images">
+                    <img  src="../assets/images/zig-zag-img-sm2.png">
+             </a>
+             <a href="../assets/images/zig-zag-img-22.png" class="hidden-xl hidden-lg hidden-md zigHidden-sm display-xs" data-fancybox="images">
+                    <img  src="../assets/images/zig-zag-img-22.png">
+             </a>
+           </div>
+          </div> <!-- End zigzag section-->
+  </div>
+    <div class="panel">
+    <div class="panel-heading">Events</div>
+    <div class="panel-body">
+    <ol class="side-list">
+    <li>
+          <h5><a href="#">Show in USA</a></h5>
+          <small>USA</small>
+    </li>
+    <li>
+          <h5><a href="#">ADIDAS Show in USA</a></h5>
+          <small>USA</small>
+    </li>
+    <li>
+          <h5><a href="#">ADIDAS Show</a></h5>
+          <small>USA</small>
+    </li>
+    <li>
+          <h5><a href="#">ADIDAS in USA</a></h5>
+          <small>USA</small>
+    </li>
+   </ol>
+   </div>
+  </div>
+  </section> <!-- End Main body-->
+
+  <footer>
+    <div class="form-container">
+      <div class="form-footer">
+          <h3>Get in touch with us</h3>
+          <form action="#">
+                <div class="form-groupA">
+                   <label for="name"><h5>Name</h5></label>
+                   <input type="text" class="form-control" id="name" placeholder="enter name">
+                </div>
+                <div class="form-groupA">
+                   <label for="email"><h5>Email</h5></label>
+                   <input type="email" class="form-control" id="email" placeholder="enter email">
+                </div><br>
+                  <div class="form-groupB">
+                     <label for="country"><h5>Country</h5></label>
+                     <input type="text" class="form-control" id="country" placeholder="USA">
+                  </div>
+                  <div class="form-groupB">
+                     <label for="state"><h5>State</h5></label>
+                     <input type="options" class="form-control" id="state" placeholder="USA">
+                  </div><br>
+              <div class="form-groupC">
+                <label for="radioBtn"><h5>Gender</h5><br></label>
+                   <label class="radio-inline">
+                     <input type="radio" class="radioBtn" name="optradio" checked>Male
+                   </label>
+                   <label class="radio-inline">
+                     <input type="radio" class="radioBtn"name="optradio">Female
+                   </label>
+                   <label class="radio-inline">
+                     <input type="radio" class="radioBtn" name="optradio">Other
+                   </label>
+              </div><br>
+              <div class="form-groupD">
+                 <label for="comment"><h5>Comment</h5></label>
+                 <textarea class="form-control" rows="5" id="comment" placeholder="Message"></textarea>
+              </div>
+              <div class="text-center">
+               <button type="submit" class="btn btn-default">SUBMIT</button>
+             </div><br>
+          </form>
+      </div>
+      <div class="bottom-footer">
+          <div class="text-center">
+          <nav class="table ">
+          <ul class="footer-list">
+            <li><a href="#">Our Tracks</a></li>
+            <li>/</li>
+            <li><a href="#">Find Events</a></li>
+            <li>/</li>
+            <li><a href="#">Track map</a></li>
+            <li>/</li>
+            <li><a href="#">Shop</a></li>
+            <li>/</li>
+            <li><a href="#">About Us</a></li>
+          </ul>
+          </nav>
+          <div id="social">
+            <a href="#">
+              <span class="facebook-icon facebook">&nbsp;</span>
+            </a>
+            <a href="#">
+              <span class="twitter-icon twitter">&nbsp;</span>
+            </a>
+            <a href="#">
+              <span class="instagram-icon instagram">&nbsp;</span>
+            </a>
+            <a href="#">
+              <span class="linkedin-icon linkedin">&nbsp;</span>
+            </a>
+          </div>
+          <small>&copy; copyright 2020 <a href="#">Adidas</a></small>
+          </div>
+      </div><!-- End bottom-footer-->
+    </div>
+  </footer><!-- End footer-->
+
+
+  <!-- JS -->
+  <script src="../assets/js/jquery.js"></script>
+  <script src="../assets/js/updatedJavascript.js"></script>
+  <script src="../assets/js/fancyBoxJS.js"></script>
+
+</body>
+</html>
